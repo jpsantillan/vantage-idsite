@@ -19,7 +19,7 @@
   <body ng-app="stormpathIdpApp">
     <script type="text/ng-template" id="views/login.html">
       <div class="view login-view" ng-show="ready">
-        <div class="box row">
+        <div class="">
           <div class="email-password-area  col-xs-12" ng-class="[hasSocial ? 'small col-sm-8' : 'large col-sm-12']">
             <div class="header">
               <span>Log In</span>
@@ -68,7 +68,7 @@
           </div>
 
           <div class="social-area  col-xs-12 col-sm-4" ng-show="hasSocial">
-            <div class="header">&nbsp;</div>
+            <div class="special-block">&nbsp;</div>
             <label>Easy 1-click login:</label>
             <button ng-repeat="p in providers" class="btn btn-social btn-{{p.providerId}}" ng-click="providerLogin(p.providerId)">{{p.providerId}}</button>
           </div>
@@ -84,7 +84,7 @@
     </script>
     <script type="text/ng-template" id="views/registration.html">
       <div class="view registration-view">
-        <div class="box row">
+        <div class="row">
           <div class="col-sm-12">
             <div class="header">
               <span>Create an Account</span>
